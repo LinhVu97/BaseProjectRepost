@@ -6,12 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A72ABA42D0884890032C853 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABA32D0884890032C853 /* Stevia */; };
+		9A72ABA72D0885120032C853 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABA62D0885120032C853 /* FirebaseAuth */; };
+		9A72ABA92D0885120032C853 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABA82D0885120032C853 /* FirebaseCore */; };
+		9A72ABAB2D0885120032C853 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABAA2D0885120032C853 /* FirebaseDatabase */; };
+		9A72ABAD2D0885120032C853 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABAC2D0885120032C853 /* FirebaseFirestore */; };
+		9A72ABAF2D0885120032C853 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72ABAE2D0885120032C853 /* FirebaseStorage */; };
+		9AE471342D092FD700A7F526 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9AE471332D092FD700A7F526 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9A554A8F2D087AAA001667C3 /* BaseProjectRepost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProjectRepost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9A554AA12D087AAC001667C3 /* Exceptions for "BaseProjectRepost" folder in "BaseProjectRepost" target */ = {
+		9A72AB9E2D0882C90032C853 /* Exceptions for "BaseProjectRepost" folder in "BaseProjectRepost" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +34,7 @@
 		9A554A912D087AAA001667C3 /* BaseProjectRepost */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9A554AA12D087AAC001667C3 /* Exceptions for "BaseProjectRepost" folder in "BaseProjectRepost" target */,
+				9A72AB9E2D0882C90032C853 /* Exceptions for "BaseProjectRepost" folder in "BaseProjectRepost" target */,
 			);
 			path = BaseProjectRepost;
 			sourceTree = "<group>";
@@ -36,16 +46,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A72ABAB2D0885120032C853 /* FirebaseDatabase in Frameworks */,
+				9AE471342D092FD700A7F526 /* Alamofire in Frameworks */,
+				9A72ABA42D0884890032C853 /* Stevia in Frameworks */,
+				9A72ABA72D0885120032C853 /* FirebaseAuth in Frameworks */,
+				9A72ABA92D0885120032C853 /* FirebaseCore in Frameworks */,
+				9A72ABAF2D0885120032C853 /* FirebaseStorage in Frameworks */,
+				9A72ABAD2D0885120032C853 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A4A60FB2D09242F008A9B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A554A862D087AAA001667C3 = {
 			isa = PBXGroup;
 			children = (
 				9A554A912D087AAA001667C3 /* BaseProjectRepost */,
+				9A4A60FB2D09242F008A9B5C /* Frameworks */,
 				9A554A902D087AAA001667C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,16 +93,25 @@
 				9A554A8B2D087AAA001667C3 /* Sources */,
 				9A554A8C2D087AAA001667C3 /* Frameworks */,
 				9A554A8D2D087AAA001667C3 /* Resources */,
+				9A72ABB02D0885230032C853 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9AE471312D09281C00A7F526 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9A554A912D087AAA001667C3 /* BaseProjectRepost */,
 			);
 			name = BaseProjectRepost;
 			packageProductDependencies = (
+				9A72ABA32D0884890032C853 /* Stevia */,
+				9A72ABA62D0885120032C853 /* FirebaseAuth */,
+				9A72ABA82D0885120032C853 /* FirebaseCore */,
+				9A72ABAA2D0885120032C853 /* FirebaseDatabase */,
+				9A72ABAC2D0885120032C853 /* FirebaseFirestore */,
+				9A72ABAE2D0885120032C853 /* FirebaseStorage */,
+				9AE471332D092FD700A7F526 /* Alamofire */,
 			);
 			productName = BaseProjectRepost;
 			productReference = 9A554A8F2D087AAA001667C3 /* BaseProjectRepost.app */;
@@ -107,6 +141,12 @@
 			);
 			mainGroup = 9A554A862D087AAA001667C3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9A72ABA22D0884890032C853 /* XCRemoteSwiftPackageReference "Stevia" */,
+				9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9AE4712F2D0927FA00A7F526 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				9AE471322D092FD700A7F526 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9A554A902D087AAA001667C3 /* Products */;
 			projectDirPath = "";
@@ -127,6 +167,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A72ABB02D0885230032C853 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A554A8B2D087AAA001667C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -136,6 +197,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AE471312D09281C00A7F526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 9AE471302D09281C00A7F526 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A554AA32D087AAC001667C3 /* Debug */ = {
@@ -149,9 +217,9 @@
 				INFOPLIST_FILE = BaseProjectRepost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,9 +244,9 @@
 				INFOPLIST_FILE = BaseProjectRepost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +401,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A72ABA22D0884890032C853 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		9AE4712F2D0927FA00A7F526 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
+		9AE471322D092FD700A7F526 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A72ABA32D0884890032C853 /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA22D0884890032C853 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		9A72ABA62D0885120032C853 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9A72ABA82D0885120032C853 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9A72ABAA2D0885120032C853 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9A72ABAC2D0885120032C853 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9A72ABAE2D0885120032C853 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A72ABA52D0885120032C853 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		9AE471302D09281C00A7F526 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AE4712F2D0927FA00A7F526 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		9AE471332D092FD700A7F526 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AE471322D092FD700A7F526 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A554A872D087AAA001667C3 /* Project object */;
 }
