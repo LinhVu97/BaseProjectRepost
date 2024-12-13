@@ -1,0 +1,65 @@
+.
+├── BaseProjectRepost
+│   ├── AppDelegate.swift
+│   ├── Base.lproj
+│   ├── Data
+│   │   ├── DataSources
+│   │   ├── Models
+│   │   │   └── ExampleModel.swift
+│   │   └── Repositories
+│   ├── Domain
+│   │   ├── Entities
+│   │   │   └── User.swift
+│   │   ├── Repositories
+│   │   └── UseCases
+│   │       └── GetUserUseCase.swift
+│   ├── Extensions
+│   │   ├── String+Extensions.swift
+│   │   └── UIView+Extensions.swift
+│   ├── Frameworks
+│   │   ├── Firebase
+│   │   │   ├── FirebaeFirestoreService.swift
+│   │   │   ├── FirebaseAuthService.swift
+│   │   │   └── FirebaseStorageService.swift
+│   │   └── Networking
+│   │       ├── APIEndpoint.swift
+│   │       ├── APIs
+│   │       └── NetworkingService.swift
+│   ├── Info.plist
+│   ├── Presentation
+│   │   ├── Component
+│   │   │   └── CustomTabbar.swift
+│   │   ├── Coordinators
+│   │   ├── ViewModels
+│   │   └── Views
+│   │       └── HomeViewController.swift
+│   ├── Resources
+│   │   ├── Assets.xcassets
+│   │   │   ├── AccentColor.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── AppIcon.appiconset
+│   │   │   │   └── Contents.json
+│   │   │   └── Contents.json
+│   │   └── Base.lproj
+│   │       └── LaunchScreen.storyboard
+│   └── Utils
+│       ├── AppConstants.swift
+│       └── Base.lproj
+├── BaseProjectRepost.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   └── swiftpm
+│   │   │       ├── Package.resolved
+│   │   │       └── configuration
+│   │   └── xcuserdata
+│   │       └── macmini.xcuserdatad
+│   │           └── UserInterfaceState.xcuserstate
+│   └── xcuserdata
+│       └── macmini.xcuserdatad
+│           └── xcschemes
+│               └── xcschememanagement.plist
+└── structure.txt
+
+38 directories, 25 files

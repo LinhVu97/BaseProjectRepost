@@ -31,7 +31,7 @@ class NetworkingService {
     private init() {}
     
     func request<T: Codable>(_ endpoint: APIEndpoint,
-                             url: URL,
+                             responseType: T.Type,
                              completion: @escaping (Result<T, APIError>) -> Void) {
         guard let fullURL = URL(string: "\(endpoint.baseUrl)\(endpoint.path)") else {
             completion(.failure(.invalidURL))
@@ -53,7 +53,7 @@ class NetworkingService {
                 }
             }
         
-        print(url)
+        print(fullURL)
         print(endpoint.headers)
         print(endpoint.params)
         print(endpoint.method)

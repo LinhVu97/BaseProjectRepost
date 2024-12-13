@@ -28,7 +28,7 @@ extension APIEndpoint {
     }
     
     var encoding: ParameterEncoding {
-        return JSONEncoding.default
+        return URLEncoding.default
     }
     
     var timeout: TimeInterval {
